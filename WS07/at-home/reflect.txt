@@ -1,0 +1,14 @@
+Name:          Janah Vitalicio
+Date:          March 15, 2019 (Week 9, Workshop 7)
+
+The Hero class does not need to know the existence of the SuperHero class because the
+SuperHero class "is-a" Hero but a Hero is not necessarily a SuperHero.
+
+The SuperHero class need to know about the existence of the Hero class because its
+parent class is the Hero class and it needs to access some of the methods of the Hero
+class.
+
+It printed out "Ancient Battle!" because when a SuperHero fights a Hero, they are not
+allowed to use the Super (bonus) power. Therefore, a fight between a SuperHero and a
+Hero is identical to the fight between Heroes, so the SuperHero class calls that
+function from the Hero class.

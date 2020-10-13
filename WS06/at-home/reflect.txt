@@ -1,0 +1,18 @@
+Name:          Janah Vitalicio
+Date:          March 8, 2019 (Week 8, Workshop 6)
+
+The copy assignment operator checks for self-assignment first before performing anything
+else is because of the logic inside the function. If we do not check for self-assignment
+first and the program executes the deallocation statement, it would release or deallocate
+the memory holding the resource data and access to the source resource will be lost,
+then phoneNumbers[i] = source.phoneNumbers[i]; will be a source of error.
+
+I must assign phoneNumbers to nullptr first before calling the copy assignment operator
+to ensure that the assignment operator does not deallocate any memory if called by the
+copy constructor.
+
+When I tried to modify the code, Visual Studio was giving me an error. This was because
+the parameter of a copy constructor must be sent by-reference; otherwise it will not be
+a copy constructor. If the parameter, the object, is passed as a value, then the copy
+constructor of that object would call itself. Therefore, the parameter should be passed
+by reference.

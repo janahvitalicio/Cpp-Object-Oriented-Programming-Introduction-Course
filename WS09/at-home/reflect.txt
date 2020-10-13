@@ -1,0 +1,26 @@
+Name:          Janah Vitalicio
+Date:          March 25, 2019 (Week 11, Workshop 9)
+
+It would cause a compile error because the main source file does not see the
+template functions. But if I put the functions in the header file, the code
+compiles. The compiler generates the implementation for each client type at
+compile-time from the defined template applies in this situation.
+
+I have to define the template function above the main(), before it is used,
+because the compiler will not see the template functions. "#include" works like
+copy and paste, therefore they are always at the top of the code before the main().
+
+It is possible to do this lab without templates by overloading the functions
+in Data.h to accept integer and double arguments. However, lines of code would
+be repeated unnecessarily. And polymorphism would not be applied when it should
+be. The advantage of using templates is that it promotes polymorphism. Also, it
+makes your code more efficient.
+
+The difference between template<class T> and template<typename T> is none. Both
+are equivalent to one another. They perfom the same task in making the subsequent
+code block as a template class or a function.
+
+I have learned to use template headers and constrained casts (specially on related
+types) and how implementing them can greatly make my code more efficient. I also
+learned that they promote polymorphism - a single identifier having multiple
+meanings.

@@ -1,0 +1,23 @@
+Name:          Janah Vitalicio
+Date:          March 22, 2019 (Week 10, Workshop 8)
+
+An abstract class is a base class that defines an interface, while a concrete class
+is a derived class that implements that interface. The abstract class identifies the
+member functions that the class hierarchy exposes to its clients and is the gateway
+to testing the derived classes in its own inheritance hierarchy. Each concrete class
+gives a specific meaning to the interface.
+
+Although the abstract class is the only class that is visible to the main module, the
+main module can work with chequing and savings accounts because the abstract class has
+access to the implementation modules. The abstract class contains the virtual
+declaration of the functions. However, the definition of those functions is inside
+their own implementation classes, and the abstract needs access to these classes to be
+able to implement them.
+
+The destructor is necessary to ensure the destruction of any created dynamic memory.
+However, to ensure that any object in the hierarchy calls the destructor of its most
+derived class at destruction time, the base class declares the destructor as virtual.
+
+The same identifier can be used by many classes by shadowing. The implementation
+classes will apply the concept of overloading by having multiple meanings in each
+implementation class and override the classes.
