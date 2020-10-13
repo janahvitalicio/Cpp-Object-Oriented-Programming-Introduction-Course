@@ -1,0 +1,24 @@
+/**********************************************************
+ * Name:          Janah Vitalicio
+ * Date:          January 25, 2019 (Week 3, Workshop 2)
+ **********************************************************/
+
+Allocating memory only for the new element is not possible because this would
+cause memory issues such as memory leaks. The dynamically allocated pointer could
+go out of scope if only certain elements from the array is allocated to a new
+dynamic memory. This is why we need to allocate new dynamic memory for the
+entire array when we increase the size of an existing array of dynamically
+allocated memory.
+
+We do not need to use the delete operator on the array itself because this
+could cause double deletion, having the dynamic memory deallocated first.
+There is no need to delete or remove the address of an actual array because
+this would only cause an error and memory problem. It is enough to set the
+array to NULL, which is also a good programming practice.
+
+Even if my main function has two display(...) function definitions, the
+compiler knows which definition to call because the parameter types are
+different, and the number of parameters is also different. display(const
+struct CellPhone cp) has one struct parameter, and display(const struct
+CellPhone* cp, int num) has two parameters, which is a dynamic memory
+allocated struct parameter and an int parameter.

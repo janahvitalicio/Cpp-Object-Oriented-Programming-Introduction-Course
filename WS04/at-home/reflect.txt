@@ -1,0 +1,28 @@
+/**********************************************************
+ * Name:          Janah Vitalicio
+ * Date:          February 8, 2019 (Week 5, Workshop 4)
+ **********************************************************/
+
+In this workshop, I have learned to define and apply a default constructor and to
+overload constructors with parameters in my program. I learned that I should put
+instance variable into a safe empty state using the default constructor to prevent
+the program from storing random data in the variables. I also learned how to use
+the keyword ‘this’ to refer to the current object’s instance variables instead of
+calling them individually in my code.
+
+A Safe Empty State is a state of instance variables where they are defined by the
+user as ‘empty’ based on their data type (eg. an int’s safe empty state is 0 and a
+char’s empty state is ‘\0’) to make sure that there is no random data stored in
+the variables. There is not another state as the safe empty state because there is
+no other safe empty state other than what it is now.
+
+I have minimized code duplication by calling functions that I defined to perform
+certain tasks that can be used repeatedly in my code. I used the constructors with
+arguments to decide whether an input is valid and use the default constructor to
+place the variable into a safe empty state when the input is invalid.
+
+canTravelWith(...) can access the private data of the object referenced in its
+parameter because it is a member function of the Travel class, which also happened
+to be the class type of the object referenced to. In C++, privacy is not applied
+at an individual object level; therefore any member function of the class can
+access any private member.

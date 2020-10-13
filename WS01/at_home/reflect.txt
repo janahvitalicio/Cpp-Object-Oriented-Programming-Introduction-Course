@@ -1,0 +1,26 @@
+/**********************************************************
+ * Name:          Janah Vitalicio
+ * Date:          January 18, 2019 (Week 2, Workshop 1)
+ **********************************************************/
+
+This workshop helped me a lot because I was able to apply the concepts that I
+learned in class specially regarding modularity. I learned how modularity works
+by diving the program into small parts and linking the modules together. This
+workshop helped understand the concept of Object-Oriented programming.
+
+In doing this workshop, I learned that the purpose of using namespaces is to
+avoid variable naming conflict in the program. Also, I learned that header
+files are for defining classes and declaring function prototypes. Functions
+should not be defined in a header file because functions are defined in an
+implementation file.
+
+Header files should not be compiled because there is no need to compile them.
+Header files are usually included in implementation/source files, which are the
+actual files intended to be compiled. A header file usually is only for
+declaring function prototypes and/or defining classes.
+
+An implementation file or .cpp file should never be included in another source
+file because this will cause a few LINK errors in the program as I have
+encountered while doing this workshop. The error is caused by the compiler
+detecting multiple declarations in the program because I mistakenly included a
+.cpp to another .cpp file, but I corrected it and the program worked.

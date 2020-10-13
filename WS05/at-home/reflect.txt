@@ -1,0 +1,16 @@
+Name:          Janah Vitalicio
+Date:          February 15, 2019 (Week 6, Workshop 5)
+
+In this workshop, I learned how to overload member operators and to use them for different
+purposes. In general, the workshop was manageable and the instructions were straightforward.
+
+The operator+ should not return a reference to a Fraction object (like operator+=) because
+this operator was overloaded after returning its value. Therefore, we only need to return a
+copy of the current object as it was before any changes took place.
+
+Four temporary objects were created in this program: Before the display of Fraction a, after
+the display of Fraction b, when a and b were added together, and when b and d were added
+together.
+
+I reused the function isEmpty a lot to avoid duplication. Also, instead of using if/else-if
+statement, I turned it into a Boolean expression to lessen the line of codes.

@@ -1,0 +1,33 @@
+Name:          Janah Vitalicio
+Date:          February 1, 2019 (Week 4, Workshop 3)
+
+In this workshop, I learned how to define a member function of a class. I used
+the scope resolution operator to identify the function as a member of a class.
+I also learned how to declare the member function prototypes as public so that
+the client code would be able to call and access the data members. Furthermore,
+data provided by the client should always be validated if they’re invalid or
+not. Invalid data should not be accepted and set variable should be in a safe
+empty state. I also learned how to format the output using the public members
+of ostream.
+
+The hardest part in completing the at home portion of this workshop is when I
+had to upgrade the validation of ISBN. There were a lot of calculations and
+complications involved in this part. At first, I did not know what to do, but
+once I started thinking of a solution, it all came to me. My solution was to
+store each digit of the ISBN not including the check digit so that I would be
+able to manipulate the digits easily. I encountered some difficulties in doing
+this because I had to use a reverse loop so that the digits would be in the 
+right order, but everything worked out in the end. Once I stored the digit
+individually in an array the calculations were manageable.
+
+The type that I have selected for the variable ISBN is long long because it
+ranges from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, therefore
+it will not cause an overflow to the program.
+
+If a new update to the validation logic is necessary, I would design my class
+in such a way that I don’t have to change anything in the function
+Book::set(...). To achieve this, I believe creating another function to perform
+that specific validation is necessary. I would just have to call that function
+inside Book::set(...), so that I don’t have to change anything in the function
+itself. This promotes modularity, which is encouraged in to build well-design
+programs.
